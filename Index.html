@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your AI Lead System - $49.99 One-Time Setup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f7fa;
+        }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 18px 50px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        .cta-button.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .price-section {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            margin: 60px 0;
+        }
+        .price {
+            font-size: 4em;
+            color: #667eea;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .price-subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .benefits {
+            background: #f8f9ff;
+            padding: 60px 20px;
+        }
+        .benefit-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            background: white;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        .check {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        .perfect-for {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+        }
+        .perfect-for h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .industries {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .industry {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .timeline {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 30px 0;
+        }
+        .timeline-number {
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            flex: 1;
+        }
+        .timeline-content h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .faq {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        .faq-item {
+            background: white;
+            padding: 25px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        .faq-item h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .footer-cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .footer-cta h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .price {
+                font-size: 3em;
+            }
+            .cta-button {
+                padding: 15px 35px;
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+        <h1>🤖 Stop Missing Leads<br>Let AI Run Your Business</h1>
+        <p>Complete business automation setup - calls answered, appointments booked, follow-ups sent. All done for you in 24-72 hours.</p>
+        <a href="https://www.paypal.me/523asmo/49.99" class="cta-button">Pay $49.99 Now</a>
+        <a href="#learn-more" class="cta-button secondary">Learn More ↓</a>
+    </div>
+
+    <div class="container" id="learn-more">
+        <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 50px;">What You Get</h2>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📞</div>
+                <h3>AI Phone Agent</h3>
+                <p>Your calls answered 24/7. Books appointments, qualifies leads, answers questions - even while you sleep.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">✉️</div>
+                <h3>Email Automation</h3>
+                <p>Automatic follow-ups, confirmations, and nurture sequences. Never lose a lead to slow response times.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3>Calendar System</h3>
+                <p>Prospects book directly into your schedule. No back-and-forth. Automatic reminders reduce no-shows.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Lead Tracking</h3>
+                <p>Every inquiry logged and organized. Nothing slips through the cracks. Full visibility into your pipeline.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🛠️</div>
+                <h3>Complete Setup</h3>
+                <p>We build it, test it, and show you how to use it. You don't touch any tech - just start getting booked.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎓</div>
+                <h3>Training Included</h3>
+                <p>5-minute video walkthrough plus direct support. We make sure you're confident using your new system.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="price-section" style="margin: 0 20px;">
+        <h2>One Simple Price</h2>
+        <div class="price">$49.99</div>
+        <p class="price-subtitle">One-time setup fee. No subscriptions. No hidden costs.</p>
+        <a href="https://www.paypal.me/523asmo/49.99" class="cta-button">Get Started Now</a>
+    </div>
+
+    <div class="benefits">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 40px;">Why This Changes Everything</h2>
+            
+            <div class="benefit-list">
+                <div class="benefit-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <h3>Never Miss Another Lead</h3>
+                        <p>AI answers calls instantly, 24/7. No more voicemails or missed opportunities.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <h3>Stop Chasing Appointments</h3>
+                        <p>Prospects book directly into your calendar. No more phone tag or back-and-forth texts.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <h3>Automate Follow-Ups</h3>
+                        <p>Every lead gets nurtured automatically. Your competition is still manually texting.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <h3>Work Less, Earn More</h3>
+                        <p>Your system runs 24/7 while you focus on delivering great service.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <h3>Scale Without Hiring</h3>
+                        <p>Handle 10x more leads without hiring a receptionist or VA.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="perfect-for">
+        <h2>Perfect For</h2>
+        <div class="industries">
+            <div class="industry">
+                <h3>🔧 Service Businesses</h3>
+                <p>Plumbers, electricians, HVAC, roofing, landscaping</p>
+            </div>
+            <div class="industry">
+                <h3>🏠 Home Services</h3>
+                <p>Cleaning, handyman, pest control, locksmith</p>
+            </div>
+            <div class="industry">
+                <h3>💼 Professionals</h3>
+                <p>Consultants, coaches, accountants, lawyers</p>
+            </div>
+            <div class="industry">
+                <h3>💆 Health & Wellness</h3>
+                <p>Chiropractors, med spas, trainers, therapists</p>
+            </div>
+            <div class="industry">
+                <h3>✂️ Beauty & Personal</h3>
+                <p>Salons, barbershops, estheticians, stylists</p>
+            </div>
+            <div class="industry">
+                <h3>🏡 Real Estate</h3>
+                <p>Agents, property managers, investors</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 30px;">How It Works</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-number">1</div>
+                <div class="timeline-content">
+                    <h3>Pay & Submit Info</h3>
+                    <p>Click the button, pay $49.99, fill out a quick form with your business details. Takes 3 minutes.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-number">2</div>
+                <div class="timeline-content">
+                    <h3>We Build Your System</h3>
+                    <p>You relax. We set up your AI phone agent, email automation, calendar, and lead tracking. 24-72 hours.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-number">3</div>
+                <div class="timeline-content">
+                    <h3>Get Your Login</h3>
+                    <p>Receive email with credentials, 5-minute training video, and direct support contact.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-number">4</div>
+                <div class="timeline-content">
+                    <h3>Start Getting Booked</h3>
+                    <p>Your system is live. Watch appointments fill your calendar automatically. Finally have time to grow your business.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 30px;">Common Questions</h2>
+        
+        <div class="faq">
+            <div class="faq-item">
+                <h3>Do I need technical skills?</h3>
+                <p>Absolutely not. That's literally why you're paying us. We handle 100% of the setup. You just use the system we build.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Are there monthly fees?</h3>
+                <p>No! $49.99 is a one-time setup fee. The AI tools we use have free tiers. If you want premium features later, you can upgrade directly with them.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What if I don't like it?</h3>
+                <p>We build it exactly to your business needs. But if you're unhappy, message us within 7 days and we'll make it right.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How long does setup take?</h3>
+                <p>24-72 hours after you submit your information. You'll get an email when your system is ready.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can I see an example first?</h3>
+                <p>We can't share other clients' systems (privacy), but we'll show you exactly what yours does in the training video we send after building it!</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What happens after 72 hours?</h3>
+                <p>You get an email with login credentials, a 5-minute training video, and direct contact for support. Then you start getting booked!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-cta">
+        <h2>Ready to Automate?</h2>
+        <p style="font-size: 1.3em; margin-bottom: 40px; opacity: 0.95;">Stop missing leads. Start getting booked on autopilot.</p>
+        <a href="https://www.paypal.me/523asmo/49.99" class="cta-button">Get Your System Now - $49.99</a>
+        <p style="margin-top: 30px; font-size: 0.9em; opacity: 0.8;">Questions? Message me on Facebook or reply to any confirmation email.</p>
+    </div>
+
+</body>
+</html>
